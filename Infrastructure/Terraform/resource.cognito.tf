@@ -1,4 +1,4 @@
-resource "aws_cognito_user_pool" "pool" {
+1resource "aws_cognito_user_pool" "pool" {
 name = "${var.user_pool_name}"
 }
 
@@ -23,7 +23,7 @@ scope_description = "delete-${var.resource_server_name}"
 }
 }
 
-resource "aws_cognito_user_pool_client" "BFF" {
+resource "aws_cognito_user_pool_client" "BFF1" {
 name = "${var.resource_server_name}"
 user_pool_id = "${aws_cognito_user_pool.pool.id}"
 allowed_oauth_flows = ["client_credentials"] 
