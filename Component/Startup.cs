@@ -85,7 +85,7 @@ namespace Component
 
             services.AddSwaggerGen(options =>
             {
-                options.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
+                options.SwaggerDoc("v1", new Info { Title = "My API", Version = "v2" });
                 options.AddSecurityDefinition(_securityType, new OAuth2Scheme
                 {
                     Type = _securityType,
